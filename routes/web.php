@@ -8,3 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get( '/hello', 'App\Http\Controllers\HelloController@view');
+Route::get( '/inventory', 'App\Http\Controllers\InventoryController@index');
