@@ -1,25 +1,20 @@
 <?php
 
 namespace Database\Seeders;
-
-use App\Models\User;
+use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
 
-class UsersTableSeeder extends Seeders
+class ItemsTableSeeder extends Seeder
 {
     public function run()
     {
-        if (!User::where('email', 'test@example.com')->exists()) {
-            DB::table('users')->insert([
-                'name' => 'Test User',
-                'email' => 'test@example.com',
-                'password' => Hash::make('password'),
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]);
-        }
+        DB::table('items')->insert([
+            ['name' => 'Laptop', 'price' => 599.99, 'category_id' => 1], // Technology
+            ['name' => 'Smartphone', 'price' => 799.99, 'category_id' => 1], // Technology
+            ['name' => 'Yoga Mat', 'price' => 25.00, 'category_id' => 2], // Health
+            ['name' => 'Vitamins', 'price' => 15.00, 'category_id' => 2], // Health
+            ['name' => 'Math Textbook', 'price' => 39.99, 'category_id' => 3], // Education
+            ['name' => 'Notebook', 'price' => 5.00, 'category_id' => 3], // Education
+        ]);
     }
 }
-
-
