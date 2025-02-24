@@ -11,7 +11,6 @@
         </button>
     </div>
 
-    
 
     <!-- Inventory Table -->
     <div class="table-responsive">
