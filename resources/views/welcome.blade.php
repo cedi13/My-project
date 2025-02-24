@@ -155,7 +155,7 @@
                                     </svg>
                                 </div>
 
-                                
+
 
                                 <div class="pt-3 sm:pt-5">
                                     <h2 class="text-xl font-semibold text-black dark:text-white">Vibrant Ecosystem</h2>
@@ -167,6 +167,9 @@
                             </div>
                         </div>
                     </main>
+
+
+                    
 
                     <footer class="py-16 text-center text-sm text-black dark:text-white/70">
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
