@@ -10,6 +10,7 @@ Route::get('/items', [ItemController::class, 'index'])->name('items.index');
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('/categories', 'App\Http\Controllers\CategoryController@index');
 
 Route::get('/index', function () {
     return redirect('/items');
